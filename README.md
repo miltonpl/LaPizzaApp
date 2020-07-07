@@ -18,5 +18,5 @@ To start the game oaver again.
 <li>box.js</li>
 </ul>
 <p> Each of this files have show() function in their class, the show() function shows the image of the object<br>
-  Another important aspect is that each constructroctor take x,y coordinated, xspeed, yspeed.
+  Another important aspect is that each constructroctor takes x,y coordinated, xspeed, yspeed.
 </p>
