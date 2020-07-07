@@ -1,5 +1,5 @@
 
-
+//bomb moves only on one direction
 class Bomb{
     constructor(x, y, w, h, img, speed){
         this.x = x;
