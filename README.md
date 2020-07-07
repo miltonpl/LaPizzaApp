@@ -11,10 +11,12 @@ To start the game oaver again.
 <p> The computation delete/drop/pop/move/initialization to aliens, ship, rocks,bomb fance is done here</p>
 * helper.js
 <p>This file helps reduce the lines of code of the sketch.js so some implementation like create a 2DArray is done in this file.</p>
-* alien.js 
-* bomb.js
-* ship.js
-* box.js
+<ul>
+<li>alien.js</li>
+<li>bomb.js</li>
+<li>ship.js</li>
+<li>box.js</li>
+</ul>
 <p> Each of this files have show() function in their class show to the image of the object.<br>
   Another important aspect is that each constructroctor take x,y coordinated, xspeed, yspeed.
 </p>
