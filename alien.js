@@ -12,16 +12,19 @@ class Alien{
         this.toDelete = false;
         this.countShots = 0;
     }
+    //show alien ship
     show(){
         image(this.img, this.x, this.y, this.w, this.h);
     }
     blowup(){
         this.toDelete = true;
     }
+    //shift direction and move down
     shiftDown(){
         this.xdir *= -1;
         this.y += this.ydir;
     }
+    // toward the xdir direction
     move(){
         this.x = this.x + this.xdir;
     }
@@ -65,6 +68,7 @@ class Alien{
         else 
         return false;
     }
+    //The alien only move down when hitting the boundry
     moveInBroundry(){
         if(this.x < 0 || this.x > width - this.w){
             this.shiftDown();
@@ -73,7 +77,7 @@ class Alien{
         else
             this.move();
     }
-    //delete after shots alienship
+    //delete alien2 after ten shots
     inpact(){
         this.countShots +=1;
         if(this.countShots >= 10)
