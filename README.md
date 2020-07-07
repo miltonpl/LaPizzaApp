@@ -1,2 +1,2 @@
-# JScodegames
-Simple games created using P5js libraries following the code train challenge.
+# JScodegame
+Simple game created using P5js libraries following the code train challenge.
