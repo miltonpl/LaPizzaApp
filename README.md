@@ -8,5 +8,16 @@ The sound effect play when ship fires, alien drops bombs, a second alien enters,
 To start the game oaver again.
 ### js files
 * sketch.js
-<p> he computational delete/drop/pop/move/initialization to aliens, ship, rocks,bomb fance is done here.<br>
+<p> The computation delete/drop/pop/move/initialization to aliens, ship, rocks,bomb fance is done here.<br>
+</p>
+* helper.js
+<p>This file helps reduce the lines of code of the sketch.js so some implementation like create a 2DArray is done in this file.<br>
+</p>
+* alien.js 
+* bomb.js
+* ship.js
+* box.js
+<p> Each of this files have show() function in their class show to the image of the object.<br>
+  Another important aspect is that each constructroctor take x,y coordinated, xspeed, yspeed<br>
+  
 </p>
