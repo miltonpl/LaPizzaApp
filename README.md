@@ -5,7 +5,7 @@ The game has background images library, alien imges, ship image
 ## Sound
 The sound effect play when ship fires, alien drops bombs, a second alien enters,
 ## reset button optional
-To start the game oaver again.
+To start the game again.
 ### js files
 * sketch.js
 <p> The computation delete/drop/pop/move/initialization to aliens, ship, rocks,bomb fance is done here</p>
