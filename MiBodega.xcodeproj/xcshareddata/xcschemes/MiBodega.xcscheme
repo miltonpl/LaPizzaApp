@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "52A9E2A829FC91C2009522AB"
-               BuildableName = "LaPizza.app"
-               BlueprintName = "LaPizza"
+               BuildableName = "MiBodega.app"
+               BlueprintName = "MiBodega"
                ReferencedContainer = "container:MiBodega.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "52A9E2A829FC91C2009522AB"
-            BuildableName = "LaPizza.app"
-            BlueprintName = "LaPizza"
+            BuildableName = "MiBodega.app"
+            BlueprintName = "MiBodega"
             ReferencedContainer = "container:MiBodega.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "52A9E2A829FC91C2009522AB"
-            BuildableName = "LaPizza.app"
-            BlueprintName = "LaPizza"
+            BuildableName = "MiBodega.app"
+            BlueprintName = "MiBodega"
             ReferencedContainer = "container:MiBodega.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
