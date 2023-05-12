@@ -19,6 +19,9 @@
 		52F69F702A0B2B1A00FA674F /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F69F6F2A0B2B1A00FA674F /* Bundle+Ext.swift */; };
 		52F69F7D2A0B3EBF00FA674F /* DIconDimention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F69F7C2A0B3EBF00FA674F /* DIconDimention.swift */; };
 		52F69F7F2A0B42C200FA674F /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F69F7E2A0B42C200FA674F /* Image+Ext.swift */; };
+		52F69F9B2A0DA9FE00FA674F /* DIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F69F9A2A0DA9FE00FA674F /* DIconView.swift */; };
+		52F69F9D2A0DAAD800FA674F /* DIconCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F69F9C2A0DAAD800FA674F /* DIconCoordinator.swift */; };
+		52F69FA62A0DB88E00FA674F /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 52F69FA52A0DB88E00FA674F /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,8 @@
 		52F69F6F2A0B2B1A00FA674F /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
 		52F69F7C2A0B3EBF00FA674F /* DIconDimention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIconDimention.swift; sourceTree = "<group>"; };
 		52F69F7E2A0B42C200FA674F /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
+		52F69F9A2A0DA9FE00FA674F /* DIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIconView.swift; sourceTree = "<group>"; };
+		52F69F9C2A0DAAD800FA674F /* DIconCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIconCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F69FA62A0DB88E00FA674F /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +121,7 @@
 		52F69F0E2A0B216500FA674F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				52F69F982A0DA9E600FA674F /* Demo */,
 				52F69F6E2A0B2A2F00FA674F /* Extensions */,
 				52F69F5A2A0B258600FA674F /* DSpace.swift */,
 				52F69F6A2A0B29D900FA674F /* DIcon.swift */,
@@ -166,6 +173,15 @@
 			path = Project;
 			sourceTree = "<group>";
 		};
+		52F69F982A0DA9E600FA674F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				52F69F9A2A0DA9FE00FA674F /* DIconView.swift */,
+				52F69F9C2A0DAAD800FA674F /* DIconCoordinator.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -194,6 +210,9 @@
 			dependencies = (
 			);
 			name = Designify;
+			packageProductDependencies = (
+				52F69FA52A0DB88E00FA674F /* Swinject */,
+			);
 			productName = Designify;
 			productReference = 52F69EDE2A0B1EED00FA674F /* Designify.framework */;
 			productType = "com.apple.product-type.framework";
@@ -243,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 52F69ED42A0B1EED00FA674F;
+			packageReferences = (
+				52F69FA42A0DB88E00FA674F /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 52F69EDF2A0B1EED00FA674F /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -294,7 +316,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F69EE32A0B1EED00FA674F /* Designify.docc in Sources */,
+				52F69F9D2A0DAAD800FA674F /* DIconCoordinator.swift in Sources */,
 				52F69F7D2A0B3EBF00FA674F /* DIconDimention.swift in Sources */,
+				52F69F9B2A0DA9FE00FA674F /* DIconView.swift in Sources */,
 				52F69F6D2A0B2A2700FA674F /* UIImage+Ext.swift in Sources */,
 				52F69F702A0B2B1A00FA674F /* Bundle+Ext.swift in Sources */,
 				52F69F7F2A0B42C200FA674F /* Image+Ext.swift in Sources */,
@@ -565,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52F69FA42A0DB88E00FA674F /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52F69FA52A0DB88E00FA674F /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F69FA42A0DB88E00FA674F /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52F69ED52A0B1EED00FA674F /* Project object */;
 }
