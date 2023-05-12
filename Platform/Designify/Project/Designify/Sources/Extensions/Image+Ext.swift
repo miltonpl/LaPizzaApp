@@ -10,6 +10,6 @@ import SwiftUI
 extension Image {
     /// Loads an image from the Designify assets bundle
     public static func coreDImage(named name: String) -> Image {
-        Image(name, bundle: .designify)
+        Image(name, bundle: .designifyModule)
     }
 }

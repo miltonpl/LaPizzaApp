@@ -10,7 +10,7 @@ import UIKit
 extension UIImage {
     /// Loads an image from the Designify assets bundle
     public static func coreDImage(named name: String) -> UIImage? {
-        UIImage(named: name, in: .designify, compatibleWith: nil)
+        UIImage(named: name, in: .designifyModule, compatibleWith: nil)
     }
 }
 

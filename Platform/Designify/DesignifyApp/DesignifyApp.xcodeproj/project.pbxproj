@@ -72,11 +72,11 @@
 		52F69F2E2A0B234B00FA674F /* DesignifyApp */ = {
 			isa = PBXGroup;
 			children = (
+				52F69F842A0B57D100FA674F /* DIconView.swift */,
 				52F69F2F2A0B234B00FA674F /* DesignifyApp.swift */,
 				52F69F312A0B234B00FA674F /* ContentView.swift */,
 				52F69F332A0B234D00FA674F /* Assets.xcassets */,
 				52F69F352A0B234D00FA674F /* Preview Content */,
-				52F69F842A0B57D100FA674F /* DIconView.swift */,
 			);
 			path = DesignifyApp;
 			sourceTree = "<group>";

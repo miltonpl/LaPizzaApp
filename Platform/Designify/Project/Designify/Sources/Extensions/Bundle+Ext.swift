@@ -10,7 +10,7 @@ import Foundation
 private final class Designify { }
 
 extension Bundle {
-    static var designify: Bundle {
+    static var designifyModule: Bundle {
         moduleBundle(for: Designify.self)
     }
 }
