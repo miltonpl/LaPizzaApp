@@ -6,11 +6,14 @@
 //
 
 import Swinject
+import Designify
+import SwiftUI
 
 class PluginAssembly: Assembly {
     func assemble(container: Container) {
         // Register Denpendencies
         container.registerWithContainer(OrdersCartAPI.self, factory: CartManger.init)
+        container.registerWithChildContainer(DesignifyPluginAPI.self, factory: DesignifyPlugin.init)
     }
 }
 

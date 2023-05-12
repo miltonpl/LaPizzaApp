@@ -5,6 +5,7 @@
 //  Created by Milton Palaguachi on 5/9/23.
 //
 
+import Designify
 import Swinject
 import SwiftUI
 
@@ -21,13 +22,14 @@ class FeatureCoordinator: Coordinator {
         switch feature {
             case .options:
                 NavigationStack {
-                    FeatureView() { result in
-                        print("action \(result)")
-                    }
+                    designifyAPI.coordinator.build()
                 }
         }
     }
     
-    init(container: Container) {}
+    let designifyAPI: DesignifyPluginAPI
     
+    init(container: Container) {
+        designifyAPI = container.get()
+    }
 }
