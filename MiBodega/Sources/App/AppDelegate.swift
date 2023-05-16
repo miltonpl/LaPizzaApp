@@ -8,6 +8,7 @@
 import Designify
 import Swinject
 import UIKit
+import Orders
 
 final class AppDelegate: UIResponder, UIApplicationDelegate {
     let container = Container()
@@ -15,11 +16,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions
                      launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
 //        container.register(PluginAssembly.self) { _ in PluginAssembly() }
-        container.registerWithContainer(OrdersCartAPI.self, factory: CartManger.init)
-//        container.register(DesignifyPluginAPI.self) { _ in DesignifyPlugin()}
         container.registerWithChildContainer(DesignifyPluginAPI.self, factory: DesignifyPlugin.init)
-        container.register(CartService.self) { _ in OrdersHttpCartService() }
-        container.register(ItemService.self) { _ in OrdersHttpItemService() }
+        container.registerWithChildContainer(OrdersAPI.self, factory: OrdersPluginAPI.init)
           return true
       }
 

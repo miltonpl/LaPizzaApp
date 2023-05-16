@@ -34,7 +34,7 @@ public enum DIcon: CaseIterable {
 extension DIcon {
     /// Returns `DIcon` as UIImage.
     public var uiImage: UIImage {
-        let image = UIImage.coreDImage(named: assetName)!.withRenderingMode(.alwaysOriginal)
+        let image = UIImage.coreDImage(named: assetName)?.withRenderingMode(.alwaysOriginal) ?? UIImage()
         image.accessibilityIdentifier = iconAccessibilityLabel
         return image
     }

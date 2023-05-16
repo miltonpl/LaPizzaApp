@@ -14,39 +14,39 @@
             filePath = "MiBodega/Sources/Container/PluginAssembly.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "assemble(container:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "C3A701F8-6362-4E47-8CBF-E0D1DB39005A - a30f2cf60c815247"
+                  uuid = "C3A701F8-6362-4E47-8CBF-E0D1DB39005A - 1594fa97b3ea3aa5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "LaPizza.PluginAssembly.assemble(container: Swinject.Container) -&gt; ()"
-                  moduleName = "LaPizza"
+                  symbolName = "MiBodega.PluginAssembly.assemble(container: Swinject.Container) -&gt; ()"
+                  moduleName = "MiBodega"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/milton/Documents/Projects/LaPizzaApp/MiBodega/Sources/Container/PluginAssembly.swift"
+                  urlString = "file:///Users/milton/Documents/Projects/MiBodegaApp/MiBodega/Sources/Container/PluginAssembly.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
                   offsetFromSymbolStart = "40">
                </Location>
                <Location
-                  uuid = "C3A701F8-6362-4E47-8CBF-E0D1DB39005A - f3549728e77ec3f0"
+                  uuid = "C3A701F8-6362-4E47-8CBF-E0D1DB39005A - d5ae8ae98436e4e9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "implicit closure #1 (Swinject.Container) -&gt; LaPizza.CartManger in LaPizza.PluginAssembly.assemble(container: Swinject.Container) -&gt; ()"
-                  moduleName = "LaPizza"
+                  symbolName = "implicit closure #1 (Swinject.Container) -&gt; Designify.DesignifyPlugin in MiBodega.PluginAssembly.assemble(container: Swinject.Container) -&gt; ()"
+                  moduleName = "MiBodega"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/milton/Documents/Projects/LaPizzaApp/MiBodega/Sources/Container/PluginAssembly.swift"
+                  urlString = "file:///Users/milton/Documents/Projects/MiBodegaApp/MiBodega/Sources/Container/PluginAssembly.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
                   offsetFromSymbolStart = "30">
                </Location>
             </Locations>
@@ -62,8 +62,8 @@
             filePath = "MiBodega/Sources/App/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
             <Locations>
@@ -226,6 +226,117 @@
             endingLineNumber = "22"
             landmarkName = "decrementStep()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C0E9AD1-1E08-4FB4-A72B-F0D2F1D51DFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plugins/Orders/Project/Orders/Sources/Cart/CartList/DataSource/CartListDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "handleValue(cart:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0EABA3BF-5CD7-46F2-9145-1DBDFFD0D8EE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plugins/Orders/Project/Orders/Sources/Cart/CartList/CartListCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "handle(action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66345121-BC70-4B5A-AEE8-DA7EA11247B3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plugins/Orders/Project/Orders/Sources/Cart/CartList/DataSource/CartListDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "updateItem(itemId:quantity:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16E1EFF0-4B5C-4D33-81FD-65D7C80E7701"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plugins/Orders/Project/Orders/Sources/Cart/CartList/DataSource/CartListDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "updateItem(itemId:quantity:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "16E1EFF0-4B5C-4D33-81FD-65D7C80E7701 - a3c5f9d30da1b473"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Orders.CartListDataSource.updateItem(itemId: Swift.String, quantity: Swift.Int) -&gt; ()"
+                  moduleName = "Orders"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/milton/Documents/Projects/MiBodegaApp/Plugins/Orders/Project/Orders/Sources/Cart/CartList/DataSource/CartListDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "394">
+               </Location>
+               <Location
+                  uuid = "16E1EFF0-4B5C-4D33-81FD-65D7C80E7701 - 7b54936c0308b76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in Orders.CartListDataSource.updateItem(itemId: Swift.String, quantity: Swift.Int) -&gt; ()"
+                  moduleName = "Orders"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/milton/Documents/Projects/MiBodegaApp/Plugins/Orders/Project/Orders/Sources/Cart/CartList/DataSource/CartListDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "203">
+               </Location>
+               <Location
+                  uuid = "16E1EFF0-4B5C-4D33-81FD-65D7C80E7701 - 3ed1b9ba17f4f1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Orders.Cart) -&gt; () in Orders.CartListDataSource.updateItem(itemId: Swift.String, quantity: Swift.Int) -&gt; ()"
+                  moduleName = "Orders"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/milton/Documents/Projects/MiBodegaApp/Plugins/Orders/Project/Orders/Sources/Cart/CartList/DataSource/CartListDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "62">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -5,7 +5,9 @@
 //  Created by Milton Palaguachi on 5/4/23.
 //
 
+import Designify
 import SwiftUI
+
 extension FlowCoordinator {
     enum Page: String, Identifiable {
         case apple, banana, carrot

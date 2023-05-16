@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Orders
+
+  Created by Milton Palaguachi on 5/11/23.
+  
+*/
+
+"homeTitle" = "La Pizza";
+"homeBody" = "Order Pizza";
+"homeFooterTitle" = "Palaguachi Inc.";
+"homeGreeding" = "Hi";
+"homeOrderTitle" =  "Your Order item(s)";
+"orderTotalTitle" = "Stimated total";
