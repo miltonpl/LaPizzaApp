@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Orders
 
 class MockOrder: ObservableObject {
     typealias ItemType = RawItem.ItemType
@@ -24,9 +25,8 @@ class MockOrder: ObservableObject {
 
 func load<T: Decodable>(from file: String) -> T {
     let data: Data
-    guard let fileURL = Bundle.ordersModule.url(forResource: file, withExtension: nil) else {
+    guard let fileURL = Bundle.ordersMockModule.url(forResource: file, withExtension: nil) else {
         fatalError("Couldn't find file `\(file)` in orders bundle.")
-        //            return nil
     }
     print(fileURL)
     do {

@@ -13,13 +13,16 @@
 		522B337A2A0DCA4F00E2B8EC /* EdgeInsets+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B33782A0DCA4F00E2B8EC /* EdgeInsets+Ext.swift */; };
 		522B33832A0DCC6600E2B8EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 522B33822A0DCC6600E2B8EC /* Localizable.strings */; };
 		522B33862A0DCC9F00E2B8EC /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B33852A0DCC9F00E2B8EC /* LocalizableString.swift */; };
-		522B338F2A0DCF5E00E2B8EC /* MockOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B338E2A0DCF5E00E2B8EC /* MockOrder.swift */; };
 		522B33922A0DCF6800E2B8EC /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 522B33912A0DCF6800E2B8EC /* items.json */; };
 		522B33952A0DF57F00E2B8EC /* Bundle+Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B33942A0DF57F00E2B8EC /* Bundle+Orders.swift */; };
 		52A8301D2A1873BC0069B600 /* OrdersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8301C2A1873BC0069B600 /* OrdersApp.swift */; };
 		52A8301F2A1873BC0069B600 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8301E2A1873BC0069B600 /* ContentView.swift */; };
 		52A830212A1873BF0069B600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A830202A1873BF0069B600 /* Assets.xcassets */; };
 		52A830242A1873BF0069B600 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A830232A1873BF0069B600 /* Preview Assets.xcassets */; };
+		52A8306A2A1908F80069B600 /* Designify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A830692A1908F80069B600 /* Designify.framework */; };
+		52A8306B2A1908F80069B600 /* Designify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52A830692A1908F80069B600 /* Designify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52A8306C2A1909B60069B600 /* MockOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B338E2A0DCF5E00E2B8EC /* MockOrder.swift */; };
+		52A830742A190C6B0069B600 /* Bundel+OrdersMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A830732A190C6B0069B600 /* Bundel+OrdersMock.swift */; };
 		52F69FC12A0DBC5F00FA674F /* Orders.docc in Sources */ = {isa = PBXBuildFile; fileRef = 52F69FC02A0DBC5F00FA674F /* Orders.docc */; };
 		52F69FC72A0DBC6000FA674F /* Orders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F69FBC2A0DBC5F00FA674F /* Orders.framework */; };
 		52F69FCC2A0DBC6000FA674F /* OrdersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F69FCB2A0DBC6000FA674F /* OrdersTests.swift */; };
@@ -42,19 +45,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		52A8302A2A1873BF0069B600 /* PBXContainerItemProxy */ = {
+		52A830702A190C050069B600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52F69FB32A0DBC5F00FA674F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 52A830192A1873BC0069B600;
-			remoteInfo = OrdersApp;
-		};
-		52A830342A1873BF0069B600 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 52F69FB32A0DBC5F00FA674F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52A830192A1873BC0069B600;
-			remoteInfo = OrdersApp;
+			remoteGlobalIDString = 52F69FBB2A0DBC5F00FA674F;
+			remoteInfo = Orders;
 		};
 		52F69FC82A0DBC6000FA674F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -72,8 +68,18 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				52A8306B2A1908F80069B600 /* Designify.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A830602A1906360069B600 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -93,8 +99,9 @@
 		52A8301E2A1873BC0069B600 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52A830202A1873BF0069B600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52A830232A1873BF0069B600 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		52A830292A1873BF0069B600 /* OrdersAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrdersAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52A830332A1873BF0069B600 /* OrdersAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrdersAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A830622A1906360069B600 /* libOrdersMock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOrdersMock.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A830692A1908F80069B600 /* Designify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Designify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A830732A190C6B0069B600 /* Bundel+OrdersMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundel+OrdersMock.swift"; sourceTree = "<group>"; };
 		52F69FBC2A0DBC5F00FA674F /* Orders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Orders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F69FBF2A0DBC5F00FA674F /* Orders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Orders.h; sourceTree = "<group>"; };
 		52F69FC02A0DBC5F00FA674F /* Orders.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Orders.docc; sourceTree = "<group>"; };
@@ -125,14 +132,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52A830262A1873BF0069B600 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52A830302A1873BF0069B600 /* Frameworks */ = {
+		52A8305F2A1906360069B600 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -144,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F6A0A92A0DC5B000FA674F /* Swinject in Frameworks */,
+				52A8306A2A1908F80069B600 /* Designify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,13 +229,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		52A830632A1906370069B600 /* OrdersMock */ = {
+			isa = PBXGroup;
+			children = (
+				52A830752A190D4D0069B600 /* Make */,
+				52A830722A190C480069B600 /* Extensions */,
+				522B338D2A0DCF5E00E2B8EC /* Data */,
+				522B33902A0DCF6800E2B8EC /* jsons */,
+			);
+			path = OrdersMock;
+			sourceTree = "<group>";
+		};
+		52A830722A190C480069B600 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52A830732A190C6B0069B600 /* Bundel+OrdersMock.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		52A830752A190D4D0069B600 /* Make */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Make;
+			sourceTree = "<group>";
+		};
 		52F69FB22A0DBC5F00FA674F = {
 			isa = PBXGroup;
 			children = (
-				52F6A09A2A0DBFDE00FA674F /* Mock */,
 				52F69FD62A0DBCA300FA674F /* Project */,
 				52F69FCA2A0DBC6000FA674F /* Tests */,
 				52A8301B2A1873BC0069B600 /* OrdersApp */,
+				52A830632A1906370069B600 /* OrdersMock */,
 				52F69FBD2A0DBC5F00FA674F /* Products */,
 				52F6A0AC2A0DC81600FA674F /* Frameworks */,
 			);
@@ -246,8 +273,7 @@
 				52F69FBC2A0DBC5F00FA674F /* Orders.framework */,
 				52F69FC62A0DBC6000FA674F /* OrdersTests.xctest */,
 				52A8301A2A1873BC0069B600 /* OrdersApp.app */,
-				52A830292A1873BF0069B600 /* OrdersAppTests.xctest */,
-				52A830332A1873BF0069B600 /* OrdersAppUITests.xctest */,
+				52A830622A1906360069B600 /* libOrdersMock.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -383,15 +409,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		52F6A09A2A0DBFDE00FA674F /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				522B33902A0DCF6800E2B8EC /* jsons */,
-				522B338D2A0DCF5E00E2B8EC /* Data */,
-			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
 		52F6A0A42A0DC16A00FA674F /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +420,7 @@
 		52F6A0AC2A0DC81600FA674F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52A830692A1908F80069B600 /* Designify.framework */,
 				52F6A0AD2A0DC81600FA674F /* Designify.framework */,
 			);
 			name = Frameworks;
@@ -439,41 +457,23 @@
 			productReference = 52A8301A2A1873BC0069B600 /* OrdersApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		52A830282A1873BF0069B600 /* OrdersAppTests */ = {
+		52A830612A1906360069B600 /* OrdersMock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52A8303E2A1873BF0069B600 /* Build configuration list for PBXNativeTarget "OrdersAppTests" */;
+			buildConfigurationList = 52A830662A1906370069B600 /* Build configuration list for PBXNativeTarget "OrdersMock" */;
 			buildPhases = (
-				52A830252A1873BF0069B600 /* Sources */,
-				52A830262A1873BF0069B600 /* Frameworks */,
-				52A830272A1873BF0069B600 /* Resources */,
+				52A8305E2A1906360069B600 /* Sources */,
+				52A8305F2A1906360069B600 /* Frameworks */,
+				52A830602A1906360069B600 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				52A8302B2A1873BF0069B600 /* PBXTargetDependency */,
+				52A830712A190C050069B600 /* PBXTargetDependency */,
 			);
-			name = OrdersAppTests;
-			productName = OrdersAppTests;
-			productReference = 52A830292A1873BF0069B600 /* OrdersAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		52A830322A1873BF0069B600 /* OrdersAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52A830412A1873BF0069B600 /* Build configuration list for PBXNativeTarget "OrdersAppUITests" */;
-			buildPhases = (
-				52A8302F2A1873BF0069B600 /* Sources */,
-				52A830302A1873BF0069B600 /* Frameworks */,
-				52A830312A1873BF0069B600 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				52A830352A1873BF0069B600 /* PBXTargetDependency */,
-			);
-			name = OrdersAppUITests;
-			productName = OrdersAppUITests;
-			productReference = 52A830332A1873BF0069B600 /* OrdersAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = OrdersMock;
+			productName = OrdersMock;
+			productReference = 52A830622A1906360069B600 /* libOrdersMock.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		52F69FBB2A0DBC5F00FA674F /* Orders */ = {
 			isa = PBXNativeTarget;
@@ -528,13 +528,8 @@
 					52A830192A1873BC0069B600 = {
 						CreatedOnToolsVersion = 14.1;
 					};
-					52A830282A1873BF0069B600 = {
+					52A830612A1906360069B600 = {
 						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 52A830192A1873BC0069B600;
-					};
-					52A830322A1873BF0069B600 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 52A830192A1873BC0069B600;
 					};
 					52F69FBB2A0DBC5F00FA674F = {
 						CreatedOnToolsVersion = 14.1;
@@ -563,8 +558,7 @@
 				52F69FBB2A0DBC5F00FA674F /* Orders */,
 				52F69FC52A0DBC6000FA674F /* OrdersTests */,
 				52A830192A1873BC0069B600 /* OrdersApp */,
-				52A830282A1873BF0069B600 /* OrdersAppTests */,
-				52A830322A1873BF0069B600 /* OrdersAppUITests */,
+				52A830612A1906360069B600 /* OrdersMock */,
 			);
 		};
 /* End PBXProject section */
@@ -576,20 +570,6 @@
 			files = (
 				52A830242A1873BF0069B600 /* Preview Assets.xcassets in Resources */,
 				52A830212A1873BF0069B600 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52A830272A1873BF0069B600 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52A830312A1873BF0069B600 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,17 +601,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52A830252A1873BF0069B600 /* Sources */ = {
+		52A8305E2A1906360069B600 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52A8302F2A1873BF0069B600 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				52A8306C2A1909B60069B600 /* MockOrder.swift in Sources */,
+				52A830742A190C6B0069B600 /* Bundel+OrdersMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,7 +626,6 @@
 				522B33752A0DC99800E2B8EC /* ButtonView.swift in Sources */,
 				52F6A0A62A0DC21600FA674F /* OrdersPluginAPI.swift in Sources */,
 				52F69FC12A0DBC5F00FA674F /* Orders.docc in Sources */,
-				522B338F2A0DCF5E00E2B8EC /* MockOrder.swift in Sources */,
 				522B33742A0DC99800E2B8EC /* StepperView.swift in Sources */,
 				522B33862A0DCC9F00E2B8EC /* LocalizableString.swift in Sources */,
 				52F6A0982A0DBFB900FA674F /* CartListSectionView.swift in Sources */,
@@ -675,15 +649,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		52A8302B2A1873BF0069B600 /* PBXTargetDependency */ = {
+		52A830712A190C050069B600 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 52A830192A1873BC0069B600 /* OrdersApp */;
-			targetProxy = 52A8302A2A1873BF0069B600 /* PBXContainerItemProxy */;
-		};
-		52A830352A1873BF0069B600 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 52A830192A1873BC0069B600 /* OrdersApp */;
-			targetProxy = 52A830342A1873BF0069B600 /* PBXContainerItemProxy */;
+			target = 52F69FBB2A0DBC5F00FA674F /* Orders */;
+			targetProxy = 52A830702A190C050069B600 /* PBXContainerItemProxy */;
 		};
 		52F69FC92A0DBC6000FA674F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -751,79 +720,29 @@
 			};
 			name = Release;
 		};
-		52A8303F2A1873BF0069B600 /* Debug */ = {
+		52A830672A1906370069B600 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XWYBXAANR7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.palaguachi.OrdersAppTests;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrdersApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OrdersApp";
 			};
 			name = Debug;
 		};
-		52A830402A1873BF0069B600 /* Release */ = {
+		52A830682A1906370069B600 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XWYBXAANR7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.palaguachi.OrdersAppTests;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrdersApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OrdersApp";
-			};
-			name = Release;
-		};
-		52A830422A1873BF0069B600 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XWYBXAANR7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.palaguachi.OrdersAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OrdersApp;
-			};
-			name = Debug;
-		};
-		52A830432A1873BF0069B600 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XWYBXAANR7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.palaguachi.OrdersAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OrdersApp;
 			};
 			name = Release;
 		};
@@ -1051,20 +970,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52A8303E2A1873BF0069B600 /* Build configuration list for PBXNativeTarget "OrdersAppTests" */ = {
+		52A830662A1906370069B600 /* Build configuration list for PBXNativeTarget "OrdersMock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52A8303F2A1873BF0069B600 /* Debug */,
-				52A830402A1873BF0069B600 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		52A830412A1873BF0069B600 /* Build configuration list for PBXNativeTarget "OrdersAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52A830422A1873BF0069B600 /* Debug */,
-				52A830432A1873BF0069B600 /* Release */,
+				52A830672A1906370069B600 /* Debug */,
+				52A830682A1906370069B600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

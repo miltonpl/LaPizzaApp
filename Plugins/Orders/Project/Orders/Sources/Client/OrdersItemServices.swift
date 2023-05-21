@@ -14,8 +14,8 @@ protocol ItemService {
     func getItems() -> ItemResponse
 }
 
-struct RawItem: Decodable {
-    enum ItemType: String, Codable {
+public struct RawItem: Decodable {
+    public enum ItemType: String, Codable {
         case dairy, fruit, vegetable, bakery, vegan, meat
     }
 
@@ -25,7 +25,7 @@ struct RawItem: Decodable {
     let price: Double
     let rating: Int
     
-    init(item: MockOrder.Item) {
+    init(item: MockOrderTemp.Item) {
         self.title = item.title
         self.description = item.description
         self.type = item.type
@@ -35,7 +35,7 @@ struct RawItem: Decodable {
 }
 
 class OrdersHttpItemService: OrdersHttpClient {
-    let mock = MockOrder()
+    let mock = MockOrderTemp()
 
     enum Response {
         struct Payload {
@@ -67,5 +67,44 @@ extension OrdersHttpItemService: ItemService {
             .map { $0.map { RawItem(item: $0) } }
             .setFailureType(to: Error.self)
             .eraseToAnyPublisher()
+    }
+}
+// Temp File
+class MockOrderTemp: ObservableObject {
+    typealias ItemType = RawItem.ItemType
+    struct Item: Decodable {
+        let title: String
+        let description: String
+        let type: ItemType
+        let price: Double
+        let rating: Int
+    }
+
+    @Published
+    var items: [Item] = load(from: "items.json")
+}
+
+func load<T: Decodable>(from file: String) -> T {
+    let data: Data
+    guard let fileURL = Bundle.ordersModule.url(forResource: file, withExtension: nil) else {
+        fatalError("Couldn't find file `\(file)` in orders bundle.")
+        //            return nil
+    }
+    print(fileURL)
+    do {
+        data  = try Data(contentsOf: fileURL)
+    } catch {
+        fatalError("Couldn't load `\(fileURL)` from main bundle\nerror:\(error)")
+        //            return nil
+    }
+    print(data)
+
+    do {
+        let decoder = JSONDecoder()
+        let items = try decoder.decode(T.self, from: data)
+        return items
+    } catch {
+        fatalError("Couldn't parse \(file) as \(T.self): \nerror: \(error)")
+        //            return nil
     }
 }

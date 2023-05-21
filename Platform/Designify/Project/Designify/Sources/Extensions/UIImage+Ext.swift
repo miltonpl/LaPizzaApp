@@ -23,7 +23,7 @@ extension UIImage {
         let scaleFactor = min(widthRation, heighRation)
 
         // To keep the aspect ratio, scale by the smaller scaling ratio
-        var newSize = CGSize(width: scaleFactor * size.width, height: scaleFactor * size.height)
+        let newSize = CGSize(width: scaleFactor * size.width, height: scaleFactor * size.height)
 
         // Draw and return the resized UIImage
         let rect = CGRect(origin: .zero, size: newSize)

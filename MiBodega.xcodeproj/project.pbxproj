@@ -34,6 +34,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		522B6E412A1982A600799F60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52A830622A1906360069B600;
+			remoteInfo = OrdersMock;
+		};
+		522B6EA32A19C95E00799F60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522B6E9E2A19C95E00799F60 /* Auth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 522B6E842A19C93300799F60;
+			remoteInfo = Auth;
+		};
+		522B6EA52A19C95E00799F60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522B6E9E2A19C95E00799F60 /* Auth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 522B6E8E2A19C93400799F60;
+			remoteInfo = AuthTests;
+		};
+		52A8304E2A187B7A0069B600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52A8301A2A1873BC0069B600;
+			remoteInfo = OrdersApp;
+		};
 		52F69F1E2A0B22E400FA674F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52F69F192A0B22E400FA674F /* Designify.xcodeproj */;
@@ -90,6 +118,7 @@
 		5211759A2A06E5F30034ABB1 /* PluginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginAssembly.swift; sourceTree = "<group>"; };
 		521175A52A06F1070034ABB1 /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
 		521175A72A06F1830034ABB1 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		522B6E9E2A19C95E00799F60 /* Auth.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Auth.xcodeproj; path = Auth/Auth.xcodeproj; sourceTree = "<group>"; };
 		52A9E2A929FC91C2009522AB /* MiBodega.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiBodega.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A9E2AC29FC91C2009522AB /* MiBodegaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiBodegaApp.swift; sourceTree = "<group>"; };
 		52A9E2B029FC91C4009522AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -138,6 +167,15 @@
 				5211759A2A06E5F30034ABB1 /* PluginAssembly.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		522B6E9F2A19C95E00799F60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				522B6EA42A19C95E00799F60 /* Auth.framework */,
+				522B6EA62A19C95E00799F60 /* AuthTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		52A82FF62A132E8B0069B600 /* Logo */ = {
@@ -278,6 +316,7 @@
 		52F69FB12A0DB99600FA674F /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				522B6E9E2A19C95E00799F60 /* Auth.xcodeproj */,
 				52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */,
 			);
 			path = Plugins;
@@ -288,6 +327,8 @@
 			children = (
 				52F69FF72A0DBD5300FA674F /* Orders.framework */,
 				52F69FF92A0DBD5300FA674F /* OrdersTests.xctest */,
+				52A8304F2A187B7A0069B600 /* OrdersApp.app */,
+				522B6E422A1982A600799F60 /* libOrdersMock.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -355,6 +396,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 522B6E9F2A19C95E00799F60 /* Products */;
+					ProjectRef = 522B6E9E2A19C95E00799F60 /* Auth.xcodeproj */;
+				},
+				{
 					ProductGroup = 52F69F1A2A0B22E400FA674F /* Products */;
 					ProjectRef = 52F69F192A0B22E400FA674F /* Designify.xcodeproj */;
 				},
@@ -371,6 +416,34 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		522B6E422A1982A600799F60 /* libOrdersMock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOrdersMock.a;
+			remoteRef = 522B6E412A1982A600799F60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522B6EA42A19C95E00799F60 /* Auth.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Auth.framework;
+			remoteRef = 522B6EA32A19C95E00799F60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522B6EA62A19C95E00799F60 /* AuthTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AuthTests.xctest;
+			remoteRef = 522B6EA52A19C95E00799F60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52A8304F2A187B7A0069B600 /* OrdersApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OrdersApp.app;
+			remoteRef = 52A8304E2A187B7A0069B600 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		52F69F1F2A0B22E400FA674F /* Designify.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
