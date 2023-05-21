@@ -55,6 +55,41 @@
 			remoteGlobalIDString = 522B6E8E2A19C93400799F60;
 			remoteInfo = AuthTests;
 		};
+		524053BC2A1A7CFB00778BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522B6E9E2A19C95E00799F60 /* Auth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 522B6EAC2A19CA3000799F60;
+			remoteInfo = AuthApp;
+		};
+		524054132A1A7E5D00778BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5240540E2A1A7E5D00778BF1 /* MBPlatform.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 524053F32A1A7E2500778BF1;
+			remoteInfo = MBPlatform;
+		};
+		524054152A1A7E5D00778BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5240540E2A1A7E5D00778BF1 /* MBPlatform.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 524053FD2A1A7E2600778BF1;
+			remoteInfo = MBPlatformTests;
+		};
+		524054752A1A8F9F00778BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524054702A1A8F9F00778BF1 /* Persistance.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 524054562A1A8F8000778BF1;
+			remoteInfo = Persistance;
+		};
+		524054772A1A8F9F00778BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524054702A1A8F9F00778BF1 /* Persistance.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 524054602A1A8F8000778BF1;
+			remoteInfo = PersistanceTests;
+		};
 		52A8304E2A187B7A0069B600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */;
@@ -119,6 +154,8 @@
 		521175A52A06F1070034ABB1 /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
 		521175A72A06F1830034ABB1 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 		522B6E9E2A19C95E00799F60 /* Auth.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Auth.xcodeproj; path = Auth/Auth.xcodeproj; sourceTree = "<group>"; };
+		5240540E2A1A7E5D00778BF1 /* MBPlatform.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MBPlatform.xcodeproj; path = MBPlatform/MBPlatform.xcodeproj; sourceTree = "<group>"; };
+		524054702A1A8F9F00778BF1 /* Persistance.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Persistance.xcodeproj; path = Persistance/Persistance.xcodeproj; sourceTree = "<group>"; };
 		52A9E2A929FC91C2009522AB /* MiBodega.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiBodega.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A9E2AC29FC91C2009522AB /* MiBodegaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiBodegaApp.swift; sourceTree = "<group>"; };
 		52A9E2B029FC91C4009522AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -174,6 +211,25 @@
 			children = (
 				522B6EA42A19C95E00799F60 /* Auth.framework */,
 				522B6EA62A19C95E00799F60 /* AuthTests.xctest */,
+				524053BD2A1A7CFB00778BF1 /* AuthApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5240540F2A1A7E5D00778BF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				524054142A1A7E5D00778BF1 /* MBPlatform.framework */,
+				524054162A1A7E5D00778BF1 /* MBPlatformTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		524054712A1A8F9F00778BF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				524054762A1A8F9F00778BF1 /* Persistance.framework */,
+				524054782A1A8F9F00778BF1 /* PersistanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,6 +348,8 @@
 		52F69EF92A0B1FA700FA674F /* Platform */ = {
 			isa = PBXGroup;
 			children = (
+				524054702A1A8F9F00778BF1 /* Persistance.xcodeproj */,
+				5240540E2A1A7E5D00778BF1 /* MBPlatform.xcodeproj */,
 				52F69F192A0B22E400FA674F /* Designify.xcodeproj */,
 			);
 			path = Platform;
@@ -404,8 +462,16 @@
 					ProjectRef = 52F69F192A0B22E400FA674F /* Designify.xcodeproj */;
 				},
 				{
+					ProductGroup = 5240540F2A1A7E5D00778BF1 /* Products */;
+					ProjectRef = 5240540E2A1A7E5D00778BF1 /* MBPlatform.xcodeproj */;
+				},
+				{
 					ProductGroup = 52F69FF22A0DBD5300FA674F /* Products */;
 					ProjectRef = 52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */;
+				},
+				{
+					ProductGroup = 524054712A1A8F9F00778BF1 /* Products */;
+					ProjectRef = 524054702A1A8F9F00778BF1 /* Persistance.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -435,6 +501,41 @@
 			fileType = wrapper.cfbundle;
 			path = AuthTests.xctest;
 			remoteRef = 522B6EA52A19C95E00799F60 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		524053BD2A1A7CFB00778BF1 /* AuthApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AuthApp.app;
+			remoteRef = 524053BC2A1A7CFB00778BF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		524054142A1A7E5D00778BF1 /* MBPlatform.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MBPlatform.framework;
+			remoteRef = 524054132A1A7E5D00778BF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		524054162A1A7E5D00778BF1 /* MBPlatformTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MBPlatformTests.xctest;
+			remoteRef = 524054152A1A7E5D00778BF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		524054762A1A8F9F00778BF1 /* Persistance.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Persistance.framework;
+			remoteRef = 524054752A1A8F9F00778BF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		524054782A1A8F9F00778BF1 /* PersistanceTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PersistanceTests.xctest;
+			remoteRef = 524054772A1A8F9F00778BF1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		52A8304F2A187B7A0069B600 /* OrdersApp.app */ = {

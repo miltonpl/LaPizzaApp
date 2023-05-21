@@ -16,6 +16,12 @@
 		522B6EB32A19CA3200799F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522B6EB22A19CA3200799F60 /* Assets.xcassets */; };
 		522B6EB62A19CA3200799F60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522B6EB52A19CA3200799F60 /* Preview Assets.xcassets */; };
 		522B6EBC2A19CB1300799F60 /* AppAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 522B6EBB2A19CB1300799F60 /* AppAuth */; };
+		522B6EBE2A19CECD00799F60 /* AppAuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B6EBD2A19CECD00799F60 /* AppAuthAPI.swift */; };
+		5240541C2A1A8DD000778BF1 /* MBPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5240541B2A1A8DD000778BF1 /* MBPlatform.framework */; };
+		5240541D2A1A8DD000778BF1 /* MBPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5240541B2A1A8DD000778BF1 /* MBPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		524054812A1A9D6900778BF1 /* Persistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524054802A1A9D6800778BF1 /* Persistance.framework */; };
+		524054822A1A9D6900778BF1 /* Persistance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 524054802A1A9D6800778BF1 /* Persistance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		524054842A1B0FF800778BF1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524054832A1B0FF800778BF1 /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +34,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5240541E2A1A8DD000778BF1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				524054822A1A9D6900778BF1 /* Persistance.framework in Embed Frameworks */,
+				5240541D2A1A8DD000778BF1 /* MBPlatform.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		522B6E842A19C93300799F60 /* Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		522B6E872A19C93300799F60 /* Auth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Auth.h; sourceTree = "<group>"; };
@@ -39,6 +60,10 @@
 		522B6EB02A19CA3000799F60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		522B6EB22A19CA3200799F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522B6EB52A19CA3200799F60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		522B6EBD2A19CECD00799F60 /* AppAuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAuthAPI.swift; sourceTree = "<group>"; };
+		5240541B2A1A8DD000778BF1 /* MBPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		524054802A1A9D6800778BF1 /* Persistance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Persistance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		524054832A1B0FF800778BF1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524054812A1A9D6900778BF1 /* Persistance.framework in Frameworks */,
+				5240541C2A1A8DD000778BF1 /* MBPlatform.framework in Frameworks */,
 				522B6EBC2A19CB1300799F60 /* AppAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +102,7 @@
 				522B6E922A19C93400799F60 /* AuthTests */,
 				522B6EAD2A19CA3000799F60 /* AuthApp */,
 				522B6E852A19C93300799F60 /* Products */,
+				5240541A2A1A8DD000778BF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +119,7 @@
 		522B6E862A19C93300799F60 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				5240547F2A1A9D2200778BF1 /* Sources */,
 				522B6E872A19C93300799F60 /* Auth.h */,
 				522B6E882A19C93300799F60 /* Auth.docc */,
 			);
@@ -132,6 +161,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5240541A2A1A8DD000778BF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				524054802A1A9D6800778BF1 /* Persistance.framework */,
+				5240541B2A1A8DD000778BF1 /* MBPlatform.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5240547F2A1A9D2200778BF1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				522B6EBD2A19CECD00799F60 /* AppAuthAPI.swift */,
+				524054832A1B0FF800778BF1 /* Endpoint.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -154,6 +201,7 @@
 				522B6E802A19C93300799F60 /* Sources */,
 				522B6E812A19C93300799F60 /* Frameworks */,
 				522B6E822A19C93300799F60 /* Resources */,
+				5240541E2A1A8DD000778BF1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,6 +325,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522B6EBE2A19CECD00799F60 /* AppAuthAPI.swift in Sources */,
+				524054842A1B0FF800778BF1 /* Endpoint.swift in Sources */,
 				522B6E892A19C93300799F60 /* Auth.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +492,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +521,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,6 +540,7 @@
 		522B6E9C2A19C93400799F60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XWYBXAANR7;
@@ -504,6 +557,7 @@
 		522B6E9D2A19C93400799F60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XWYBXAANR7;
