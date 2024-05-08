@@ -13,7 +13,7 @@ struct AppleView: View {
 
     var body: some View {
         List {
-            Button("Pushn Banana") {
+            Button("Push Banana") {
                 coordinator.push(.banana)
             }
             Button("Present Lemon") {

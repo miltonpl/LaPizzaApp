@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52B854742A3033E800954D9A /* MiBodegaUI.docc in Sources */ = {isa = PBXBuildFile; fileRef = 52B854732A3033E800954D9A /* MiBodegaUI.docc */; };
+		52B8547A2A3033E900954D9A /* MiBodegaUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B8546F2A3033E800954D9A /* MiBodegaUI.framework */; };
+		52B8547F2A3033E900954D9A /* MiBodegaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B8547E2A3033E900954D9A /* MiBodegaUITests.swift */; };
+		52B854802A3033E900954D9A /* MiBodegaUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B854722A3033E800954D9A /* MiBodegaUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52B854902A30344800954D9A /* MiBodegaUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B8548F2A30344800954D9A /* MiBodegaUIApp.swift */; };
+		52B854922A30344800954D9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B854912A30344800954D9A /* ContentView.swift */; };
+		52B854942A30344B00954D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B854932A30344B00954D9A /* Assets.xcassets */; };
+		52B854972A30344B00954D9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B854962A30344B00954D9A /* Preview Assets.xcassets */; };
+		52B8549E2A30358000954D9A /* ItemImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B8549D2A30358000954D9A /* ItemImageView.swift */; };
+		52B854CD2A3037C800954D9A /* Designify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B854CC2A3037C800954D9A /* Designify.framework */; };
+		52B854CE2A3037C800954D9A /* Designify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52B854CC2A3037C800954D9A /* Designify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52B854D12A30386D00954D9A /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B854D02A30386D00954D9A /* PriceView.swift */; };
+		52B854D62A303FDC00954D9A /* MBPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B854D52A303FDC00954D9A /* MBPlatform.framework */; };
+		52B854D72A303FDC00954D9A /* MBPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52B854D52A303FDC00954D9A /* MBPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52B8547B2A3033E900954D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B854662A3033E800954D9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B8546E2A3033E800954D9A;
+			remoteInfo = MiBodegaUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52B854CF2A3037C900954D9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				52B854D72A303FDC00954D9A /* MBPlatform.framework in Embed Frameworks */,
+				52B854CE2A3037C800954D9A /* Designify.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52B8546F2A3033E800954D9A /* MiBodegaUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MiBodegaUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B854722A3033E800954D9A /* MiBodegaUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiBodegaUI.h; sourceTree = "<group>"; };
+		52B854732A3033E800954D9A /* MiBodegaUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MiBodegaUI.docc; sourceTree = "<group>"; };
+		52B854792A3033E900954D9A /* MiBodegaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiBodegaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B8547E2A3033E900954D9A /* MiBodegaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiBodegaUITests.swift; sourceTree = "<group>"; };
+		52B8548D2A30344800954D9A /* MiBodegaUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiBodegaUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B8548F2A30344800954D9A /* MiBodegaUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiBodegaUIApp.swift; sourceTree = "<group>"; };
+		52B854912A30344800954D9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52B854932A30344B00954D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52B854962A30344B00954D9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52B8549D2A30358000954D9A /* ItemImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImageView.swift; sourceTree = "<group>"; };
+		52B854CC2A3037C800954D9A /* Designify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Designify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B854D02A30386D00954D9A /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		52B854D52A303FDC00954D9A /* MBPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52B8546C2A3033E800954D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B854D62A303FDC00954D9A /* MBPlatform.framework in Frameworks */,
+				52B854CD2A3037C800954D9A /* Designify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B854762A3033E900954D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B8547A2A3033E900954D9A /* MiBodegaUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B8548A2A30344800954D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52B854652A3033E800954D9A = {
+			isa = PBXGroup;
+			children = (
+				52B854712A3033E800954D9A /* MiBodegaUI */,
+				52B8547D2A3033E900954D9A /* MiBodegaUITests */,
+				52B8548E2A30344800954D9A /* MiBodegaUIApp */,
+				52B854702A3033E800954D9A /* Products */,
+				52B854CB2A3037C800954D9A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52B854702A3033E800954D9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52B8546F2A3033E800954D9A /* MiBodegaUI.framework */,
+				52B854792A3033E900954D9A /* MiBodegaUITests.xctest */,
+				52B8548D2A30344800954D9A /* MiBodegaUIApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52B854712A3033E800954D9A /* MiBodegaUI */ = {
+			isa = PBXGroup;
+			children = (
+				52B8549B2A3034DD00954D9A /* Sources */,
+				52B854722A3033E800954D9A /* MiBodegaUI.h */,
+				52B854732A3033E800954D9A /* MiBodegaUI.docc */,
+			);
+			path = MiBodegaUI;
+			sourceTree = "<group>";
+		};
+		52B8547D2A3033E900954D9A /* MiBodegaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52B8547E2A3033E900954D9A /* MiBodegaUITests.swift */,
+			);
+			path = MiBodegaUITests;
+			sourceTree = "<group>";
+		};
+		52B8548E2A30344800954D9A /* MiBodegaUIApp */ = {
+			isa = PBXGroup;
+			children = (
+				52B8548F2A30344800954D9A /* MiBodegaUIApp.swift */,
+				52B854912A30344800954D9A /* ContentView.swift */,
+				52B854932A30344B00954D9A /* Assets.xcassets */,
+				52B854952A30344B00954D9A /* Preview Content */,
+			);
+			path = MiBodegaUIApp;
+			sourceTree = "<group>";
+		};
+		52B854952A30344B00954D9A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52B854962A30344B00954D9A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52B8549B2A3034DD00954D9A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				52B8549C2A30353800954D9A /* ProductTile */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		52B8549C2A30353800954D9A /* ProductTile */ = {
+			isa = PBXGroup;
+			children = (
+				52B8549D2A30358000954D9A /* ItemImageView.swift */,
+				52B854D02A30386D00954D9A /* PriceView.swift */,
+			);
+			path = ProductTile;
+			sourceTree = "<group>";
+		};
+		52B854CB2A3037C800954D9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52B854D52A303FDC00954D9A /* MBPlatform.framework */,
+				52B854CC2A3037C800954D9A /* Designify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52B8546A2A3033E800954D9A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B854802A3033E900954D9A /* MiBodegaUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		52B8546E2A3033E800954D9A /* MiBodegaUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52B854832A3033E900954D9A /* Build configuration list for PBXNativeTarget "MiBodegaUI" */;
+			buildPhases = (
+				52B8546A2A3033E800954D9A /* Headers */,
+				52B8546B2A3033E800954D9A /* Sources */,
+				52B8546C2A3033E800954D9A /* Frameworks */,
+				52B8546D2A3033E800954D9A /* Resources */,
+				52B854CF2A3037C900954D9A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiBodegaUI;
+			productName = MiBodegaUI;
+			productReference = 52B8546F2A3033E800954D9A /* MiBodegaUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52B854782A3033E900954D9A /* MiBodegaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52B854862A3033E900954D9A /* Build configuration list for PBXNativeTarget "MiBodegaUITests" */;
+			buildPhases = (
+				52B854752A3033E900954D9A /* Sources */,
+				52B854762A3033E900954D9A /* Frameworks */,
+				52B854772A3033E900954D9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52B8547C2A3033E900954D9A /* PBXTargetDependency */,
+			);
+			name = MiBodegaUITests;
+			productName = MiBodegaUITests;
+			productReference = 52B854792A3033E900954D9A /* MiBodegaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52B8548C2A30344800954D9A /* MiBodegaUIApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52B854982A30344B00954D9A /* Build configuration list for PBXNativeTarget "MiBodegaUIApp" */;
+			buildPhases = (
+				52B854892A30344800954D9A /* Sources */,
+				52B8548A2A30344800954D9A /* Frameworks */,
+				52B8548B2A30344800954D9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiBodegaUIApp;
+			productName = MiBodegaUIApp;
+			productReference = 52B8548D2A30344800954D9A /* MiBodegaUIApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52B854662A3033E800954D9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					52B8546E2A3033E800954D9A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					52B854782A3033E900954D9A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					52B8548C2A30344800954D9A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 52B854692A3033E800954D9A /* Build configuration list for PBXProject "MiBodegaUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52B854652A3033E800954D9A;
+			productRefGroup = 52B854702A3033E800954D9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52B8546E2A3033E800954D9A /* MiBodegaUI */,
+				52B854782A3033E900954D9A /* MiBodegaUITests */,
+				52B8548C2A30344800954D9A /* MiBodegaUIApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52B8546D2A3033E800954D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B854772A3033E900954D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B8548B2A30344800954D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B854972A30344B00954D9A /* Preview Assets.xcassets in Resources */,
+				52B854942A30344B00954D9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52B8546B2A3033E800954D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B854742A3033E800954D9A /* MiBodegaUI.docc in Sources */,
+				52B8549E2A30358000954D9A /* ItemImageView.swift in Sources */,
+				52B854D12A30386D00954D9A /* PriceView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B854752A3033E900954D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B8547F2A3033E900954D9A /* MiBodegaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52B854892A30344800954D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B854922A30344800954D9A /* ContentView.swift in Sources */,
+				52B854902A30344800954D9A /* MiBodegaUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52B8547C2A3033E900954D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52B8546E2A3033E800954D9A /* MiBodegaUI */;
+			targetProxy = 52B8547B2A3033E900954D9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52B854812A3033E900954D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52B854822A3033E900954D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52B854842A3033E900954D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XWYBXAANR7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.module.MiBodegaUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52B854852A3033E900954D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XWYBXAANR7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.module.MiBodegaUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52B854872A3033E900954D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XWYBXAANR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.module.MiBodegaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52B854882A3033E900954D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XWYBXAANR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.module.MiBodegaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52B854992A30344B00954D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MiBodegaUIApp/Preview Content\"";
+				DEVELOPMENT_TEAM = XWYBXAANR7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.module.MiBodegaUIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52B8549A2A30344B00954D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MiBodegaUIApp/Preview Content\"";
+				DEVELOPMENT_TEAM = XWYBXAANR7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.module.MiBodegaUIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52B854692A3033E800954D9A /* Build configuration list for PBXProject "MiBodegaUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B854812A3033E900954D9A /* Debug */,
+				52B854822A3033E900954D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52B854832A3033E900954D9A /* Build configuration list for PBXNativeTarget "MiBodegaUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B854842A3033E900954D9A /* Debug */,
+				52B854852A3033E900954D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52B854862A3033E900954D9A /* Build configuration list for PBXNativeTarget "MiBodegaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B854872A3033E900954D9A /* Debug */,
+				52B854882A3033E900954D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52B854982A30344B00954D9A /* Build configuration list for PBXNativeTarget "MiBodegaUIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52B854992A30344B00954D9A /* Debug */,
+				52B8549A2A30344B00954D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52B854662A3033E800954D9A /* Project object */;
+}

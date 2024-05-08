@@ -97,6 +97,27 @@
 			remoteGlobalIDString = 52A8301A2A1873BC0069B600;
 			remoteInfo = OrdersApp;
 		};
+		52B854B82A3035DE00954D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B854B22A3035DE00954D9A /* MiBodegaUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52B8546F2A3033E800954D9A;
+			remoteInfo = MiBodegaUI;
+		};
+		52B854BA2A3035DE00954D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B854B22A3035DE00954D9A /* MiBodegaUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52B854792A3033E900954D9A;
+			remoteInfo = MiBodegaUITests;
+		};
+		52B854BC2A3035DE00954D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B854B22A3035DE00954D9A /* MiBodegaUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52B8548D2A30344800954D9A;
+			remoteInfo = MiBodegaUIApp;
+		};
 		52F69F1E2A0B22E400FA674F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52F69F192A0B22E400FA674F /* Designify.xcodeproj */;
@@ -164,6 +185,7 @@
 		52A9E2D229FD85FD009522AB /* LocalizableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
 		52A9E2D529FD8D1C009522AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		52A9E3182A021E61009522AB /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		52B854B22A3035DE00954D9A /* MiBodegaUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MiBodegaUI.xcodeproj; path = MiBodegaUI/MiBodegaUI.xcodeproj; sourceTree = "<group>"; };
 		52D9235E2A0A0CEC009916AE /* IconsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsCoordinator.swift; sourceTree = "<group>"; };
 		52F69F192A0B22E400FA674F /* Designify.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Designify.xcodeproj; path = Designify/Designify.xcodeproj; sourceTree = "<group>"; };
 		52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Orders.xcodeproj; path = Orders/Orders.xcodeproj; sourceTree = "<group>"; };
@@ -337,6 +359,16 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		52B854B32A3035DE00954D9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52B854B92A3035DE00954D9A /* MiBodegaUI.framework */,
+				52B854BB2A3035DE00954D9A /* MiBodegaUITests.xctest */,
+				52B854BD2A3035DE00954D9A /* MiBodegaUIApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		52D9235D2A0A0C4D009916AE /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +406,7 @@
 		52F69FB12A0DB99600FA674F /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				52B854B22A3035DE00954D9A /* MiBodegaUI.xcodeproj */,
 				522B6E9E2A19C95E00799F60 /* Auth.xcodeproj */,
 				52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */,
 			);
@@ -466,6 +499,10 @@
 					ProjectRef = 5240540E2A1A7E5D00778BF1 /* MBPlatform.xcodeproj */;
 				},
 				{
+					ProductGroup = 52B854B32A3035DE00954D9A /* Products */;
+					ProjectRef = 52B854B22A3035DE00954D9A /* MiBodegaUI.xcodeproj */;
+				},
+				{
 					ProductGroup = 52F69FF22A0DBD5300FA674F /* Products */;
 					ProjectRef = 52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */;
 				},
@@ -543,6 +580,27 @@
 			fileType = wrapper.application;
 			path = OrdersApp.app;
 			remoteRef = 52A8304E2A187B7A0069B600 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52B854B92A3035DE00954D9A /* MiBodegaUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MiBodegaUI.framework;
+			remoteRef = 52B854B82A3035DE00954D9A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52B854BB2A3035DE00954D9A /* MiBodegaUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MiBodegaUITests.xctest;
+			remoteRef = 52B854BA2A3035DE00954D9A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52B854BD2A3035DE00954D9A /* MiBodegaUIApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MiBodegaUIApp.app;
+			remoteRef = 52B854BC2A3035DE00954D9A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		52F69F1F2A0B22E400FA674F /* Designify.framework */ = {

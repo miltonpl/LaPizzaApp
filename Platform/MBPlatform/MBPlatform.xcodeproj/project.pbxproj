@@ -12,6 +12,7 @@
 		524054032A1A7E2600778BF1 /* MBPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524054022A1A7E2600778BF1 /* MBPlatformTests.swift */; };
 		524054042A1A7E2600778BF1 /* MBPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 524053F62A1A7E2500778BF1 /* MBPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		524054192A1A7E8C00778BF1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524054182A1A7E8C00778BF1 /* Networking.swift */; };
+		52B854D42A303F8F00954D9A /* NSLayoutConstraint+Comlient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B854D32A303F8F00954D9A /* NSLayoutConstraint+Comlient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		524053FD2A1A7E2600778BF1 /* MBPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		524054022A1A7E2600778BF1 /* MBPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPlatformTests.swift; sourceTree = "<group>"; };
 		524054182A1A7E8C00778BF1 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		52B854D32A303F8F00954D9A /* NSLayoutConstraint+Comlient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Comlient.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		5240540D2A1A7E2C00778BF1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				52B854D22A303F3300954D9A /* Layout */,
 				524054172A1A7E7600778BF1 /* Networking */,
 			);
 			path = Sources;
@@ -102,6 +105,14 @@
 				524054182A1A7E8C00778BF1 /* Networking.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		52B854D22A303F3300954D9A /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				52B854D32A303F8F00954D9A /* NSLayoutConstraint+Comlient.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				524053F82A1A7E2500778BF1 /* MBPlatform.docc in Sources */,
+				52B854D42A303F8F00954D9A /* NSLayoutConstraint+Comlient.swift in Sources */,
 				524054192A1A7E8C00778BF1 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

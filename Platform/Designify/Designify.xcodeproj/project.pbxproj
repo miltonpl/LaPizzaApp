@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		522B337E2A0DCBBE00E2B8EC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B337D2A0DCBBE00E2B8EC /* Coordinator.swift */; };
 		522B33802A0DCBC700E2B8EC /* Container+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B337F2A0DCBC700E2B8EC /* Container+Ext.swift */; };
+		52B854C82A3036EE00954D9A /* DBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B854C72A3036EE00954D9A /* DBaseView.swift */; };
 		52F69EE32A0B1EED00FA674F /* Designify.docc in Sources */ = {isa = PBXBuildFile; fileRef = 52F69EE22A0B1EED00FA674F /* Designify.docc */; };
 		52F69EE92A0B1EED00FA674F /* Designify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F69EDE2A0B1EED00FA674F /* Designify.framework */; };
 		52F69EEE2A0B1EED00FA674F /* DesignifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F69EED2A0B1EED00FA674F /* DesignifyTests.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		522B337D2A0DCBBE00E2B8EC /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		522B337F2A0DCBC700E2B8EC /* Container+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Container+Ext.swift"; sourceTree = "<group>"; };
+		52B854C72A3036EE00954D9A /* DBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBaseView.swift; sourceTree = "<group>"; };
 		52F69EDE2A0B1EED00FA674F /* Designify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Designify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F69EE12A0B1EED00FA674F /* Designify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Designify.h; sourceTree = "<group>"; };
 		52F69EE22A0B1EED00FA674F /* Designify.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Designify.docc; sourceTree = "<group>"; };
@@ -93,6 +95,31 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		52B854BE2A30364500954D9A /* DBase */ = {
+			isa = PBXGroup;
+			children = (
+				52B854C72A3036EE00954D9A /* DBaseView.swift */,
+			);
+			path = DBase;
+			sourceTree = "<group>";
+		};
+		52B854C92A30377F00954D9A /* DIcon */ = {
+			isa = PBXGroup;
+			children = (
+				52F69F7C2A0B3EBF00FA674F /* DIconDimention.swift */,
+				52F69F6A2A0B29D900FA674F /* DIcon.swift */,
+			);
+			path = DIcon;
+			sourceTree = "<group>";
+		};
+		52B854CA2A30379300954D9A /* DSpace */ = {
+			isa = PBXGroup;
+			children = (
+				52F69F5A2A0B258600FA674F /* DSpace.swift */,
+			);
+			path = DSpace;
+			sourceTree = "<group>";
+		};
 		52F69ED42A0B1EED00FA674F = {
 			isa = PBXGroup;
 			children = (
@@ -134,12 +161,12 @@
 		52F69F0E2A0B216500FA674F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				52B854CA2A30379300954D9A /* DSpace */,
+				52B854C92A30377F00954D9A /* DIcon */,
+				52B854BE2A30364500954D9A /* DBase */,
 				522B337B2A0DCAB100E2B8EC /* Shared */,
 				52F69F982A0DA9E600FA674F /* Demo */,
 				52F69F6E2A0B2A2F00FA674F /* Extensions */,
-				52F69F5A2A0B258600FA674F /* DSpace.swift */,
-				52F69F6A2A0B29D900FA674F /* DIcon.swift */,
-				52F69F7C2A0B3EBF00FA674F /* DIconDimention.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -329,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B854C82A3036EE00954D9A /* DBaseView.swift in Sources */,
 				52F69EE32A0B1EED00FA674F /* Designify.docc in Sources */,
 				522B33802A0DCBC700E2B8EC /* Container+Ext.swift in Sources */,
 				52F69F9D2A0DAAD800FA674F /* DIconCoordinator.swift in Sources */,
