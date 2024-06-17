@@ -16,24 +16,35 @@
 		521175932A06DB6E0034ABB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521175922A06DB6E0034ABB1 /* AppDelegate.swift */; };
 		521175992A06E5350034ABB1 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 521175982A06E5350034ABB1 /* Swinject */; };
 		5211759B2A06E5F30034ABB1 /* PluginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5211759A2A06E5F30034ABB1 /* PluginAssembly.swift */; };
-		521175A62A06F1070034ABB1 /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521175A52A06F1070034ABB1 /* TabContainerView.swift */; };
-		521175A82A06F1830034ABB1 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521175A72A06F1830034ABB1 /* TabCoordinator.swift */; };
 		52A9E2AD29FC91C2009522AB /* MiBodegaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9E2AC29FC91C2009522AB /* MiBodegaApp.swift */; };
 		52A9E2B129FC91C4009522AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A9E2B029FC91C4009522AB /* Assets.xcassets */; };
 		52A9E2B429FC91C4009522AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A9E2B329FC91C4009522AB /* Preview Assets.xcassets */; };
-		52A9E2C129FCACF7009522AB /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9E2C029FCACF7009522AB /* LogoView.swift */; };
 		52A9E2D329FD85FD009522AB /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9E2D229FD85FD009522AB /* LocalizableString.swift */; };
 		52A9E2D429FD8D1C009522AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52A9E2D629FD8D1C009522AB /* Localizable.strings */; };
 		52A9E3192A021E61009522AB /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9E3182A021E61009522AB /* CoordinatorView.swift */; };
-		52D9235F2A0A0CEC009916AE /* IconsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9235E2A0A0CEC009916AE /* IconsCoordinator.swift */; };
 		52F69F812A0B56A900FA674F /* Designify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F69F1F2A0B22E400FA674F /* Designify.framework */; };
 		52F69F822A0B56A900FA674F /* Designify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52F69F1F2A0B22E400FA674F /* Designify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		52F6A0A32A0DC0AD00FA674F /* OrdersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6A0A22A0DC0AD00FA674F /* OrdersCoordinator.swift */; };
 		52F6A0AA2A0DC76E00FA674F /* Orders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F69FF72A0DBD5300FA674F /* Orders.framework */; };
 		52F6A0AB2A0DC76E00FA674F /* Orders.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52F69FF72A0DBD5300FA674F /* Orders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52FEAD012BF5AFA700429726 /* HubCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520DC17E2BF4517E0095A459 /* HubCenter.framework */; };
+		52FEAD022BF5AFA700429726 /* HubCenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 520DC17E2BF4517E0095A459 /* HubCenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		520DC17D2BF4517E0095A459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 520DC1782BF4517E0095A459 /* HubCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 520DC15D2BF4506C0095A459;
+			remoteInfo = HubCenter;
+		};
+		520DC17F2BF4517E0095A459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 520DC1782BF4517E0095A459 /* HubCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 520DC1672BF4506D0095A459;
+			remoteInfo = HubCenterTests;
+		};
 		522B6E412A1982A600799F60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */;
@@ -146,6 +157,20 @@
 			remoteGlobalIDString = 52F69FC62A0DBC6000FA674F;
 			remoteInfo = OrdersTests;
 		};
+		52FEACEF2BF5A4CE00429726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FEACEA2BF5A4CE00429726 /* PluginAPIs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52FEACCF2BF5A44600429726;
+			remoteInfo = PluginAPIs;
+		};
+		52FEACF12BF5A4CE00429726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FEACEA2BF5A4CE00429726 /* PluginAPIs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52FEACD92BF5A44600429726;
+			remoteInfo = PluginAPIsTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -157,6 +182,7 @@
 			files = (
 				52F69F822A0B56A900FA674F /* Designify.framework in Embed Frameworks */,
 				52F6A0AB2A0DC76E00FA674F /* Orders.framework in Embed Frameworks */,
+				52FEAD022BF5AFA700429726 /* HubCenter.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +190,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		520DC1782BF4517E0095A459 /* HubCenter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HubCenter.xcodeproj; path = HubCenter/HubCenter.xcodeproj; sourceTree = "<group>"; };
 		521175842A049CA90034ABB1 /* AppleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleView.swift; sourceTree = "<group>"; };
 		521175862A049CBE0034ABB1 /* BananaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananaView.swift; sourceTree = "<group>"; };
 		521175882A049CCC0034ABB1 /* CarrotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotView.swift; sourceTree = "<group>"; };
@@ -172,8 +199,6 @@
 		521175902A04A3A90034ABB1 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		521175922A06DB6E0034ABB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5211759A2A06E5F30034ABB1 /* PluginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginAssembly.swift; sourceTree = "<group>"; };
-		521175A52A06F1070034ABB1 /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
-		521175A72A06F1830034ABB1 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 		522B6E9E2A19C95E00799F60 /* Auth.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Auth.xcodeproj; path = Auth/Auth.xcodeproj; sourceTree = "<group>"; };
 		5240540E2A1A7E5D00778BF1 /* MBPlatform.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MBPlatform.xcodeproj; path = MBPlatform/MBPlatform.xcodeproj; sourceTree = "<group>"; };
 		524054702A1A8F9F00778BF1 /* Persistance.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Persistance.xcodeproj; path = Persistance/Persistance.xcodeproj; sourceTree = "<group>"; };
@@ -181,15 +206,13 @@
 		52A9E2AC29FC91C2009522AB /* MiBodegaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiBodegaApp.swift; sourceTree = "<group>"; };
 		52A9E2B029FC91C4009522AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52A9E2B329FC91C4009522AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		52A9E2C029FCACF7009522AB /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		52A9E2D229FD85FD009522AB /* LocalizableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
 		52A9E2D529FD8D1C009522AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		52A9E3182A021E61009522AB /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 		52B854B22A3035DE00954D9A /* MiBodegaUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MiBodegaUI.xcodeproj; path = MiBodegaUI/MiBodegaUI.xcodeproj; sourceTree = "<group>"; };
-		52D9235E2A0A0CEC009916AE /* IconsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsCoordinator.swift; sourceTree = "<group>"; };
 		52F69F192A0B22E400FA674F /* Designify.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Designify.xcodeproj; path = Designify/Designify.xcodeproj; sourceTree = "<group>"; };
 		52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Orders.xcodeproj; path = Orders/Orders.xcodeproj; sourceTree = "<group>"; };
-		52F6A0A22A0DC0AD00FA674F /* OrdersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCoordinator.swift; sourceTree = "<group>"; };
+		52FEACEA2BF5A4CE00429726 /* PluginAPIs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PluginAPIs.xcodeproj; path = PluginAPIs/PluginAPIs.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,12 +223,22 @@
 				52F6A0AA2A0DC76E00FA674F /* Orders.framework in Frameworks */,
 				521175992A06E5350034ABB1 /* Swinject in Frameworks */,
 				52F69F812A0B56A900FA674F /* Designify.framework in Frameworks */,
+				52FEAD012BF5AFA700429726 /* HubCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520DC1792BF4517E0095A459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				520DC17E2BF4517E0095A459 /* HubCenter.framework */,
+				520DC1802BF4517E0095A459 /* HubCenterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		521175832A049C7C0034ABB1 /* UIDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,14 +289,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		52A82FF62A132E8B0069B600 /* Logo */ = {
-			isa = PBXGroup;
-			children = (
-				52A9E2C029FCACF7009522AB /* LogoView.swift */,
-			);
-			path = Logo;
-			sourceTree = "<group>";
-		};
 		52A9E2A029FC91C2009522AB = {
 			isa = PBXGroup;
 			children = (
@@ -293,25 +318,12 @@
 			path = MiBodega;
 			sourceTree = "<group>";
 		};
-		52A9E2BF29FCAC63009522AB /* Tab */ = {
-			isa = PBXGroup;
-			children = (
-				52A82FF62A132E8B0069B600 /* Logo */,
-				52F6A0A12A0DC09200FA674F /* Orders */,
-				52D9235D2A0A0C4D009916AE /* Icons */,
-				521175A52A06F1070034ABB1 /* TabContainerView.swift */,
-				521175A72A06F1830034ABB1 /* TabCoordinator.swift */,
-			);
-			path = Tab;
-			sourceTree = "<group>";
-		};
 		52A9E2CA29FD7D52009522AB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				521175A22A06E9780034ABB1 /* Assembly */,
 				52A9E2D129FD85C5009522AB /* Shared */,
 				52A9E2CC29FD7DDA009522AB /* App */,
-				52A9E2BF29FCAC63009522AB /* Tab */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -369,14 +381,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		52D9235D2A0A0C4D009916AE /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				52D9235E2A0A0CEC009916AE /* IconsCoordinator.swift */,
-			);
-			path = Icons;
-			sourceTree = "<group>";
-		};
 		52F69EF92A0B1FA700FA674F /* Platform */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +410,8 @@
 		52F69FB12A0DB99600FA674F /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				52FEACEA2BF5A4CE00429726 /* PluginAPIs.xcodeproj */,
+				520DC1782BF4517E0095A459 /* HubCenter.xcodeproj */,
 				52B854B22A3035DE00954D9A /* MiBodegaUI.xcodeproj */,
 				522B6E9E2A19C95E00799F60 /* Auth.xcodeproj */,
 				52F69FF12A0DBD5300FA674F /* Orders.xcodeproj */,
@@ -424,12 +430,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		52F6A0A12A0DC09200FA674F /* Orders */ = {
+		52FEACEB2BF5A4CE00429726 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52F6A0A22A0DC0AD00FA674F /* OrdersCoordinator.swift */,
+				52FEACF02BF5A4CE00429726 /* PluginAPIs.framework */,
+				52FEACF22BF5A4CE00429726 /* PluginAPIsTests.xctest */,
 			);
-			path = Orders;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,6 +502,10 @@
 					ProjectRef = 52F69F192A0B22E400FA674F /* Designify.xcodeproj */;
 				},
 				{
+					ProductGroup = 520DC1792BF4517E0095A459 /* Products */;
+					ProjectRef = 520DC1782BF4517E0095A459 /* HubCenter.xcodeproj */;
+				},
+				{
 					ProductGroup = 5240540F2A1A7E5D00778BF1 /* Products */;
 					ProjectRef = 5240540E2A1A7E5D00778BF1 /* MBPlatform.xcodeproj */;
 				},
@@ -510,6 +521,10 @@
 					ProductGroup = 524054712A1A8F9F00778BF1 /* Products */;
 					ProjectRef = 524054702A1A8F9F00778BF1 /* Persistance.xcodeproj */;
 				},
+				{
+					ProductGroup = 52FEACEB2BF5A4CE00429726 /* Products */;
+					ProjectRef = 52FEACEA2BF5A4CE00429726 /* PluginAPIs.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -519,6 +534,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		520DC17E2BF4517E0095A459 /* HubCenter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HubCenter.framework;
+			remoteRef = 520DC17D2BF4517E0095A459 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		520DC1802BF4517E0095A459 /* HubCenterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HubCenterTests.xctest;
+			remoteRef = 520DC17F2BF4517E0095A459 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		522B6E422A1982A600799F60 /* libOrdersMock.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -631,6 +660,20 @@
 			remoteRef = 52F69FF82A0DBD5300FA674F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		52FEACF02BF5A4CE00429726 /* PluginAPIs.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PluginAPIs.framework;
+			remoteRef = 52FEACEF2BF5A4CE00429726 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52FEACF22BF5A4CE00429726 /* PluginAPIsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PluginAPIsTests.xctest;
+			remoteRef = 52FEACF12BF5A4CE00429726 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -654,7 +697,6 @@
 				521175912A04A3A90034ABB1 /* FlowCoordinator.swift in Sources */,
 				521175872A049CBE0034ABB1 /* BananaView.swift in Sources */,
 				5211759B2A06E5F30034ABB1 /* PluginAssembly.swift in Sources */,
-				521175A82A06F1830034ABB1 /* TabCoordinator.swift in Sources */,
 				5211758B2A049CDB0034ABB1 /* LemonView.swift in Sources */,
 				52A9E3192A021E61009522AB /* CoordinatorView.swift in Sources */,
 				521175852A049CA90034ABB1 /* AppleView.swift in Sources */,
@@ -662,11 +704,7 @@
 				5211758D2A049CE50034ABB1 /* OliveView.swift in Sources */,
 				521175892A049CCC0034ABB1 /* CarrotView.swift in Sources */,
 				521175932A06DB6E0034ABB1 /* AppDelegate.swift in Sources */,
-				52A9E2C129FCACF7009522AB /* LogoView.swift in Sources */,
-				52D9235F2A0A0CEC009916AE /* IconsCoordinator.swift in Sources */,
 				52A9E2AD29FC91C2009522AB /* MiBodegaApp.swift in Sources */,
-				521175A62A06F1070034ABB1 /* TabContainerView.swift in Sources */,
-				52F6A0A32A0DC0AD00FA674F /* OrdersCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
