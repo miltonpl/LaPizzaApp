@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Swinject
 
 public protocol DesignifyPluginAPI {
     var coordinator: DIconCoordinator { get set }
@@ -14,11 +13,9 @@ public protocol DesignifyPluginAPI {
 
 public class DesignifyPlugin: DesignifyPluginAPI {
     public var coordinator: DIconCoordinator    
-    let container: Container
 
-    public init(container: Container) {
-        self.container = container
-        coordinator = DIconCoordinator(container: container)
+    public init() {
+        coordinator = DIconCoordinator()
     }
 
     public func build() -> some View {
@@ -31,6 +28,4 @@ public final class DIconCoordinator: ObservableObject {
     public func build() -> some View {
         DIconView()
     }
-
-    init(container: Container) {}
 }

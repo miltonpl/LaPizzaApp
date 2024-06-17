@@ -1,21 +1,12 @@
 //
-//  Assembly.swift
-//  LaPizza
+//  Container+Debug.swift
+//  HubCenter
 //
-//  Created by Milton Palaguachi on 5/6/23.
+//  Created by Milton Palaguachi on 5/15/24.
 //
 
+import Foundation
 import Swinject
-import Designify
-import SwiftUI
-
-class PluginAssembly: Assembly {
-    func assemble(container: Container) {
-        // Register Denpendencies
-//        container.registerWithContainer(OrdersCartAPI.self, factory: CartManger.init)
-        container.register(DesignifyPluginAPI.self, factory: {_ in DesignifyPlugin()})
-    }
-}
 
 #if DEBUG
 extension Container {

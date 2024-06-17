@@ -10,12 +10,10 @@ import SwiftUI
 import Swinject
 
 public protocol OrdersAPI {
-    var coordinator: CartListCoordinator { get }
-    
+    func orderContainerView(navigationPath: Binding<NavigationPath>)-> OrdersContainerView
 }
 
 public class OrdersPluginAPI: OrdersAPI {
-    public var coordinator: CartListCoordinator
     let container: Container
 
     public init(container: Container) {
@@ -23,6 +21,9 @@ public class OrdersPluginAPI: OrdersAPI {
         self.container.registerWithContainer(OrdersCartAPI.self, factory: CartManger.init)
         self.container.register(CartService.self) { _ in OrdersHttpCartService() }
         self.container.register(ItemService.self) { _ in OrdersHttpItemService() }
-        coordinator = CartListCoordinator(container: self.container)
+    }
+
+    public func orderContainerView(navigationPath: Binding<NavigationPath>) -> OrdersContainerView {
+        OrdersContainerView(navigationPath: navigationPath, container: container)
     }
 }

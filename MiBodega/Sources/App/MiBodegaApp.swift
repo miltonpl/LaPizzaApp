@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
+import HubCenter
 
 @main
 struct MiBodegaApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @State var navigationPath = NavigationPath()
+
     var body: some Scene {
         WindowGroup {
-            TabContainerView(
+            MainTabContainerView(
+                navigationPath: $navigationPath,
                 coordinator: .init(container: appDelegate.container)
             )
         }

@@ -23,6 +23,8 @@
 		52A8306B2A1908F80069B600 /* Designify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52A830692A1908F80069B600 /* Designify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52A8306C2A1909B60069B600 /* MockOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B338E2A0DCF5E00E2B8EC /* MockOrder.swift */; };
 		52A830742A190C6B0069B600 /* Bundel+OrdersMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A830732A190C6B0069B600 /* Bundel+OrdersMock.swift */; };
+		52C0BC1E2BEC510000FF05BD /* MBPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C0BC1D2BEC510000FF05BD /* MBPlatform.framework */; };
+		52C0BC1F2BEC510000FF05BD /* MBPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52C0BC1D2BEC510000FF05BD /* MBPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52F69FC12A0DBC5F00FA674F /* Orders.docc in Sources */ = {isa = PBXBuildFile; fileRef = 52F69FC02A0DBC5F00FA674F /* Orders.docc */; };
 		52F69FC72A0DBC6000FA674F /* Orders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F69FBC2A0DBC5F00FA674F /* Orders.framework */; };
 		52F69FCC2A0DBC6000FA674F /* OrdersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F69FCB2A0DBC6000FA674F /* OrdersTests.swift */; };
@@ -42,6 +44,7 @@
 		52F6A0992A0DBFB900FA674F /* ItemsTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6A08F2A0DBFB900FA674F /* ItemsTitleView.swift */; };
 		52F6A0A62A0DC21600FA674F /* OrdersPluginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6A0A52A0DC21600FA674F /* OrdersPluginAPI.swift */; };
 		52F6A0A92A0DC5B000FA674F /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 52F6A0A82A0DC5B000FA674F /* Swinject */; };
+		52FEAD2F2BF7016A00429726 /* OrdersContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FEAD2E2BF7016A00429726 /* OrdersContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				52C0BC1F2BEC510000FF05BD /* MBPlatform.framework in Embed Frameworks */,
 				52A8306B2A1908F80069B600 /* Designify.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -102,6 +106,7 @@
 		52A830622A1906360069B600 /* libOrdersMock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOrdersMock.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A830692A1908F80069B600 /* Designify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Designify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A830732A190C6B0069B600 /* Bundel+OrdersMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundel+OrdersMock.swift"; sourceTree = "<group>"; };
+		52C0BC1D2BEC510000FF05BD /* MBPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F69FBC2A0DBC5F00FA674F /* Orders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Orders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F69FBF2A0DBC5F00FA674F /* Orders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Orders.h; sourceTree = "<group>"; };
 		52F69FC02A0DBC5F00FA674F /* Orders.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Orders.docc; sourceTree = "<group>"; };
@@ -122,6 +127,7 @@
 		52F6A08F2A0DBFB900FA674F /* ItemsTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTitleView.swift; sourceTree = "<group>"; };
 		52F6A0A52A0DC21600FA674F /* OrdersPluginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersPluginAPI.swift; sourceTree = "<group>"; };
 		52F6A0AD2A0DC81600FA674F /* Designify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Designify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FEAD2E2BF7016A00429726 /* OrdersContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C0BC1E2BEC510000FF05BD /* MBPlatform.framework in Frameworks */,
 				52F6A0A92A0DC5B000FA674F /* Swinject in Frameworks */,
 				52A8306A2A1908F80069B600 /* Designify.framework in Frameworks */,
 			);
@@ -413,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				52F6A0A52A0DC21600FA674F /* OrdersPluginAPI.swift */,
+				52FEAD2E2BF7016A00429726 /* OrdersContainerView.swift */,
 			);
 			path = Plugin;
 			sourceTree = "<group>";
@@ -420,6 +428,7 @@
 		52F6A0AC2A0DC81600FA674F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52C0BC1D2BEC510000FF05BD /* MBPlatform.framework */,
 				52A830692A1908F80069B600 /* Designify.framework */,
 				52F6A0AD2A0DC81600FA674F /* Designify.framework */,
 			);
@@ -627,6 +636,7 @@
 				52F6A0A62A0DC21600FA674F /* OrdersPluginAPI.swift in Sources */,
 				52F69FC12A0DBC5F00FA674F /* Orders.docc in Sources */,
 				522B33742A0DC99800E2B8EC /* StepperView.swift in Sources */,
+				52FEAD2F2BF7016A00429726 /* OrdersContainerView.swift in Sources */,
 				522B33862A0DCC9F00E2B8EC /* LocalizableString.swift in Sources */,
 				52F6A0982A0DBFB900FA674F /* CartListSectionView.swift in Sources */,
 				52F6A0992A0DBFB900FA674F /* ItemsTitleView.swift in Sources */,

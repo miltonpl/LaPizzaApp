@@ -13,9 +13,10 @@ struct CartListView: View {
         case update(itemId: String, quantity: Int)
     }
 
+    @ObservedObject
+    var dataSource: CartListDataSource
     @State
-    var data: CartListDataSource.Data
-    var action: ((ActionType) -> Void)?
+    var total: Double = 0.0
 
     var body: some View {
         VStack {
@@ -29,9 +30,9 @@ struct CartListView: View {
 
             }
             List {
-                ForEach(data.sections, id: \.id) { section in
+                ForEach(dataSource.data.sections, id: \.id) { section in
                     CartListSectionView(section: section) { quantiy, itemId in
-                            action?(.update(itemId: itemId, quantity: quantiy))
+                        handle(action: .update(itemId: itemId, quantity: quantiy))
                     }
                 }
             }
@@ -40,10 +41,49 @@ struct CartListView: View {
             .ignoresSafeArea()
             CartListFooterView(
                 title: .localized(.orderTotalTitle),
-                total: data.total,
+                total: $total,
                 tapped: {_ in }
             )
+            .onAppear(perform: {
+//                dump("Total: \(dataSource.data.total)")
+                switch dataSource.state {
+                    case .success(let total):
+                        dump("Total: \(dataSource.data.total)")
+
+                        self.total = total
+                    default:
+                        break
+                }
+            })
             .padding([.leading, .trailing])
+        }
+    }
+
+//    @ViewBuilder
+//    func build(state: CartListDataSource.State) -> some View {
+//        switch state {
+//            case .initial:
+//                EmptyView()
+//            case .inProgress:
+//                ProgressView()
+//            case .success(let total):
+//                self.total = total
+//                EmptyView()
+//                
+////                CartListView(data: data) { handle(action: $0) }
+//            case .failure(let error):
+//                Text(error.localizedDescription)
+//        }
+//    }
+
+    func handle(action: CartListView.ActionType) {
+        switch action {
+            case .update(let itemId, let quantity):
+                if quantity < 1 {
+                    dataSource.deleteItem(itemId: itemId)
+                } else {
+                    dataSource.updateItem(itemId: itemId, quantity: quantity)
+                }
         }
     }
 }

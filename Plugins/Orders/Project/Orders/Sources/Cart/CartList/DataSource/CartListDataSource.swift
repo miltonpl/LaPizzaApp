@@ -22,19 +22,35 @@ class CartListDataSource: ObservableObject {
         var sections: [Section]
 
         var total: Double {
-            let sectionsTotals = sections.map { $0.items.reduce(0) { $0 + $1.price } }
+            let sectionsTotals = sections.map { $0.items.reduce(0) { $0 + $1.total } }
             return sectionsTotals.reduce(0) { $0 + $1 }
         }
     }
 
-    enum State {
+    enum State: Equatable {
+        static func == (lhs: CartListDataSource.State, rhs: CartListDataSource.State) -> Bool {
+            switch (lhs, rhs) {
+                case (.initial,  .initial):
+                    return true
+                case (.inProgress, .inProgress):
+                    return true
+                case (.success(let lhsTotal), .success(let rhsTotal)):
+                    return lhsTotal == rhsTotal
+                case (.failure(let lhsError), .failure(let rhsError)):
+                    return lhsError.localizedDescription == rhsError.localizedDescription
+                default:
+                    return false
+            }
+        }
+        
         case initial
         case inProgress
-        case success(Data)
+        case success(total: Double)
         case failure(Error)
     }
 
     @Published var state: State = .initial
+    @Published var data: Data = .init(sections: [])
     private var subcriptions = Set<AnyCancellable>()
 
     private let container: Container
@@ -59,6 +75,7 @@ class CartListDataSource: ObservableObject {
     }
 
     func deleteItem(itemId: String) {
+        state = .inProgress
         cartAPI
             .deleteItem(itemId: itemId)
             .delay(for: 2, scheduler: DispatchQueue.main)
@@ -100,7 +117,9 @@ class CartListDataSource: ObservableObject {
         
         let meatItems = cart.items.filter { $0.type == .meat }
         sections.append(Data.Section(title: "Meat Items", itemType: .meat, items: meatItems))
-        state = .success(.init(sections: sections))
+        data = Data(sections: sections)
+        print("CartListDataSource total: \(data.total)")
+        state = .success(total: data.total)
     }
 
     func handleCompletion(_ completion: Subscribers.Completion<Error>) {

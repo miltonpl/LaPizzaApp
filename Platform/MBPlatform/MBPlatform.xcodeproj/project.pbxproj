@@ -13,6 +13,9 @@
 		524054042A1A7E2600778BF1 /* MBPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 524053F62A1A7E2500778BF1 /* MBPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		524054192A1A7E8C00778BF1 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524054182A1A7E8C00778BF1 /* Networking.swift */; };
 		52B854D42A303F8F00954D9A /* NSLayoutConstraint+Comlient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B854D32A303F8F00954D9A /* NSLayoutConstraint+Comlient.swift */; };
+		52C0BC1B2BEC502700FF05BD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C0BC1A2BEC502700FF05BD /* Coordinator.swift */; };
+		52C0BC222BEC51E000FF05BD /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 52C0BC212BEC51E000FF05BD /* Swinject */; };
+		52C0BC252BEC522900FF05BD /* Container+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C0BC242BEC522900FF05BD /* Container+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,8 @@
 		524054022A1A7E2600778BF1 /* MBPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPlatformTests.swift; sourceTree = "<group>"; };
 		524054182A1A7E8C00778BF1 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		52B854D32A303F8F00954D9A /* NSLayoutConstraint+Comlient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Comlient.swift"; sourceTree = "<group>"; };
+		52C0BC1A2BEC502700FF05BD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		52C0BC242BEC522900FF05BD /* Container+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C0BC222BEC51E000FF05BD /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,7 @@
 				524053F52A1A7E2500778BF1 /* MBPlatform */,
 				524054012A1A7E2600778BF1 /* MBPlatformTests */,
 				524053F42A1A7E2500778BF1 /* Products */,
+				52C0BC202BEC51DF00FF05BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +100,8 @@
 		5240540D2A1A7E2C00778BF1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				52C0BC232BEC51F800FF05BD /* Container */,
+				52C0BC192BEC500900FF05BD /* Coordinator */,
 				52B854D22A303F3300954D9A /* Layout */,
 				524054172A1A7E7600778BF1 /* Networking */,
 			);
@@ -113,6 +122,29 @@
 				52B854D32A303F8F00954D9A /* NSLayoutConstraint+Comlient.swift */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		52C0BC192BEC500900FF05BD /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				52C0BC1A2BEC502700FF05BD /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		52C0BC202BEC51DF00FF05BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52C0BC232BEC51F800FF05BD /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				52C0BC242BEC522900FF05BD /* Container+Ext.swift */,
+			);
+			path = Container;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +175,9 @@
 			dependencies = (
 			);
 			name = MBPlatform;
+			packageProductDependencies = (
+				52C0BC212BEC51E000FF05BD /* Swinject */,
+			);
 			productName = MBPlatform;
 			productReference = 524053F32A1A7E2500778BF1 /* MBPlatform.framework */;
 			productType = "com.apple.product-type.framework";
@@ -192,6 +227,9 @@
 				Base,
 			);
 			mainGroup = 524053E92A1A7E2500778BF1;
+			packageReferences = (
+				52C0BC162BEC4EDC00FF05BD /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 524053F42A1A7E2500778BF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -224,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C0BC1B2BEC502700FF05BD /* Coordinator.swift in Sources */,
+				52C0BC252BEC522900FF05BD /* Container+Ext.swift in Sources */,
 				524053F82A1A7E2500778BF1 /* MBPlatform.docc in Sources */,
 				52B854D42A303F8F00954D9A /* NSLayoutConstraint+Comlient.swift in Sources */,
 				524054192A1A7E8C00778BF1 /* Networking.swift in Sources */,
@@ -492,6 +532,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52C0BC162BEC4EDC00FF05BD /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52C0BC212BEC51E000FF05BD /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52C0BC162BEC4EDC00FF05BD /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 524053EA2A1A7E2500778BF1 /* Project object */;
 }

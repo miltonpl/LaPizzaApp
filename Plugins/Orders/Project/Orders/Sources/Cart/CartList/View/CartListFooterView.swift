@@ -20,7 +20,7 @@ struct CartListFooterView: View {
     }
 
     var title: String
-    @State var total: Double
+    @Binding var total: Double
     let tapped: (ButtonType) -> Void
 
     var body: some View {
@@ -73,13 +73,13 @@ struct CartListFooterView: View {
     }
 }
 
-struct CartListFooterView_Previews: PreviewProvider {
-    static var previews: some View {
-        CartListFooterView(
-            title: "Your Oders items",
-            total: 19.99,
-            tapped: { _ in }
-        )
-            .padding()
-    }
-}
+//struct CartListFooterView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CartListFooterView(
+//            title: "Your Oders items",
+//            total: 19.99,
+//            tapped: { _ in }
+//        )
+//            .padding()
+//    }
+//}

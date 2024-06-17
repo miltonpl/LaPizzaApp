@@ -5,7 +5,7 @@
 //  Created by Milton Palaguachi on 5/4/23.
 //
 
-import Designify
+import MBPlatform
 import SwiftUI
 
 extension FlowCoordinator {

@@ -12,13 +12,17 @@ import Orders
 
 final class AppDelegate: UIResponder, UIApplicationDelegate {
     let container = Container()
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions
                      launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-//        container.register(PluginAssembly.self) { _ in PluginAssembly() }
-        container.registerWithChildContainer(DesignifyPluginAPI.self, factory: DesignifyPlugin.init)
-        container.registerWithChildContainer(OrdersAPI.self, factory: OrdersPluginAPI.init)
-          return true
-      }
+        registerDependencies()
+        return true
+    }
 
+    private func registerDependencies() {
+        //        container.register(PluginAssembly.self) { _ in PluginAssembly() }
+        container.register(DesignifyPluginAPI.self) {_ in DesignifyPlugin()}
+        container.registerWithChildContainer(OrdersAPI.self, factory: OrdersPluginAPI.init)
+        
+    }
 }
